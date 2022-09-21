@@ -14,6 +14,7 @@ export class TableComponent implements OnInit {
   filterdata:any[]=[];
   filterBy:any;
   constructor(private talent_info :TalentInfoService){}
+  
   ngOnInit(): void {
     this.getall();
 
@@ -21,8 +22,6 @@ export class TableComponent implements OnInit {
   displayedColumns: string[] = ['#', 'First Name', 'Second Name', 'Last Name' ,'Specialization'];
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-
-
 
   getall(){
     return this.talent_info.gettalent_infos().subscribe(respo=>{

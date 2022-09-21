@@ -26,14 +26,33 @@ import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './compo/table/table.component';
 import { FormsModule } from '@angular/forms';
 
+import { UserNavComponent } from './User/user-nav/user-nav.component';
+import { UserProfileComponent } from './User/user-profile/user-profile.component';
+import { UserDarshComponent } from './User/user-darsh/user-darsh.component';
+import { LoginComponent } from './User/login/login.component';
+import { RegisterComponent } from './User/register/register.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './User/modal/modal.component'; 
+import {MatFormFieldModule} from '@angular/material/form-field'; 
 
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { AddEducationComponent } from './User/add-education/add-education.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ListComponent,
     TableComponent,
+  
+    UserNavComponent,
+    UserProfileComponent,
+    UserDarshComponent,
+    LoginComponent,
+    RegisterComponent,
+    ModalComponent,
+    AddEducationComponent,
+
+  
 
 
   ],
@@ -58,7 +77,10 @@ import { FormsModule } from '@angular/forms';
     MatPaginatorModule,
     MatSortModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

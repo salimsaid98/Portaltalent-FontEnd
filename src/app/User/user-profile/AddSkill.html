@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Add Skill</h1>
+<div mat-dialog-content>
+      
+    <div class="list-group">
+        <a href="#" id="list" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+      </div>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close  (click)="close()">Save</button>
+</div>
+
+
+    <script>
+    let text="";
+    const cars = ["Saab", "Volvo", "BMW","sass"];
+    for(x in cars){
+        text+=cars[x]+" ";
+        }
+        document.getElementById('list').innerHTML=text;
+        console.log(text)
+    </script>
+    

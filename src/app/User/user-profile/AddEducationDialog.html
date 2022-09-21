@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Add Education</h1>
+<div mat-dialog-content>
+    <form  (ngSubmit)="submit()">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Start Date</label>
+                  </div>
+            </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">End Date</label>
+                      </div>
+                  </div>
+        
+          </div>
+         
+          <div mat-dialog-actions>
+            <button type="submit" mat-button mat-dialog-close  (click)="close()">Save</button>
+          </div>
+    </form>
+</div>
+
+
+
+
